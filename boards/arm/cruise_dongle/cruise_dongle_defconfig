@@ -1,0 +1,23 @@
+# Copyright (c) 2023 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+CONFIG_SOC_SERIES_NRF52X=y
+CONFIG_SOC_NRF52840_QIAA=y
+CONFIG_BOARD_CRUISE_DONGLE=y
+
+# Enable internal RC oscillator
+CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y
+CONFIG_CLOCK_CONTROL_NRF_K32SRC_500PPM=y
+CONFIG_CLOCK_CONTROL_NRF_K32SRC_SYNTH=y
+
+# Enable MPU
+CONFIG_ARM_MPU=y
+
+# Enable hardware stack protection
+CONFIG_HW_STACK_PROTECTION=y
+
+# Enable pin controller drivers
+CONFIG_PINCTRL=y
+
+# Enable gpios
+CONFIG_GPIO=y
